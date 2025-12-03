@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-image: url(backgound-index.png);
+     overflow: hidden;
+     background-size: cover;
+}
+
+
+@keyframes transitionIn {
+     from{
+          opacity: 0;
+          transform: scale3d(30px);
+          background-color: rgb(0, 0, 0);
+     } 
+}
+
+
+/*Navigation*/
+nav{
+     display: flex;
+     text-wrap: nowrap;
+}
+
+.navbar a {
+     text-decoration: none;
+     font-size: 15px;
+     color: rgb(50, 57, 70, 0.6);
+     border-radius: 20px;
+     padding: 8px 25px;
+     margin-left: 410%;
+     background: #0ef;
+     box-shadow: 0 0 8px #0ef;
+     margin-bottom: 422%;
+     transition: 0.3s ease;
+     font-weight: 600;
+     letter-spacing: 0.3px;
+}
+
+.navbar a:hover {
+     transform: translate(-15px);
+     color: #0ef;
+     background: transparent;
+     box-shadow: 0 0 8px #0ef;
+     filter: drop-shadow(0 0 1rem #0ef);
+}
+
+
+/*Contact form*/
+section{
+     position: absolute;
+     left: 34%;
+}
+
+.contact h2 {
+     font-size: 40px;
+     color: #fff;
+     text-align: center;
+     margin-bottom: 10px;
+     cursor: default;
+     transition: 0.3s;
+     font-style: italic;
+}
+
+
+.contact h2:hover{
+     -webkit-text-stroke: 0.9px rgb(0, 255, 255);
+     text-shadow: 0 0 15px rgb(0, 255, 255),
+               0 0 40px rgb(0, 255, 255),
+               0 0 80px rgb(0, 255, 255);
+     color: transparent;
+}
+
+
+.contact form {
+     width: 600px;
+     text-align: center;
+}
+
+form .input-box {
+     display: flex;
+     justify-content: space-between;
+}
+
+.input-box .input-field {
+     width: 48, 5%;
+}
+
+.field .item {
+     width: 100%;
+     padding: 18px;
+     background: transparent;
+     border: 2px solid #0ef;
+     outline: none;
+     border-radius: 6px;
+     font-size: 16px;
+     color: #fff;
+     margin: 12px 0;
+     animation: transitionIn 1s ease-in-out forwards;
+}
+
+.field.error .item {
+     border-color: #d93025;
+}
+
+.field .item::placeholder {
+     color: rgba(255, 255, 255, 0.63);
+}
+
+
+.field .error-txt {
+     font-size: 14.5px;
+     color: #d93025;
+     text-align: left;
+     margin: -5px 0 10px;
+     display: none;
+}
+.field.error .error-txt{
+     display: block;
+}
+
+form .textarea-field .item {
+     resize: none;
+}
+
+form .textarea-field .error-txt {
+     margin-top: -10px;
+}
+
+form button {
+     padding: 12px 32px;
+     background: rgb(0, 255, 255);
+     box-shadow: 0 0 10px rgba(24, 24, 24, 0.7);
+     border: none;
+     outline: none;
+     border-radius: 6px;
+     font-size: 16px;
+     color: #333;
+     letter-spacing: 1px;
+     font-weight: 600;
+     cursor: pointer;
+     margin-top: 30px;
+     transition: 0.4s;
+     animation: transitionIn 1s ease-in-out forwards;
+}
+
+
+form button:hover{
+     box-shadow: 0 0 10px rgb(0, 255, 255),
+          0 0 25px rgb(0, 255, 255),
+          0 0 35px rgb(0, 255, 255);
+     letter-spacing: 1.3px;
+}
+
+
+.transpabg{
+     position: absolute;
+     height: 77vh;
+     width: 36vw;
+     background: transparent;
+     border: 2px solid rgba(255, 255, 255, .2);
+     box-shadow: 0 0 5px rgb(0, 255, 255),
+               0 0 10px rgb(255, 255, 255);
+     backdrop-filter: blur(18px);
+     color: #fff;
+     border-radius: 12px;
+     left: 32%;
+     top: 12%;
+     z-index: -1;
+     animation: transitionIn 1s ease-in-out forwards;
+}
+
+
+.copyright h6{
+     top: 87.2%;
+     font-size: 10px;
+     position: absolute;
+     bottom: 0;
+     left: 47.3%;
+     color: #474747;
+     font-style: italic;
+     cursor: default;
+}
+
+
+
+/*------------------Key frame------------------*/
+
+@media screen and (max-width: 768px) {
+     .contact form {
+     width: 80%;
+         margin: 10px; /* Adjust margin for small screens */
+     }
+
+     .input-box .input-field {
+          width: 100%;
+     }
+}
+
+ /* Media Query for Extra Small Screens */
+@media screen and (max-width: 480px) {
+     .contact form {
+          width: 90%;
+         margin: 15px; /* Adjust margin for extra small screens */
+     }
+}

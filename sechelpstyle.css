@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     height: 126vh;
+     background-color: #1f242d;
+     background-image: url(backgound-index.png);
+     background-size: cover;
+     overflow-x: hidden;
+     background-attachment: fixed;
+}
+
+
+/*Navigation*/
+nav{
+     display: flex;
+     text-wrap: nowrap;
+}
+
+.navbar a {
+     text-decoration: none;
+     font-size: 15px;
+     color: rgb(50, 57, 70, 0.6);
+     border-radius: 20px;
+     padding: 8px 25px;
+     margin-left: 410%;
+     background: #0ef;
+     box-shadow: 0 0 8px #0ef;
+     margin-bottom: 560%;
+     transition: 0.3s ease;
+     font-weight: 600;
+     letter-spacing: 0.3px;
+}
+
+.navbar a:hover {
+     transform: translate(-15px);
+     color: #0ef;
+     background: transparent;
+     box-shadow: 0 0 8px #0ef;
+     filter: drop-shadow(0 0 1rem #0ef);
+}
+
+
+/*Help page*/
+h3 {
+     position: absolute;
+     top: 13%;
+     left: 20%;
+     text-align: center;
+     font-size: 43px;
+     color: #fff;
+     font-style: italic;
+}
+
+
+img{
+     position: absolute;
+     left: 72.5%;
+     top: 10%;
+}
+
+
+h5{
+     position: absolute;
+     color: #fff;
+     top: 21%;
+     left: 22%;
+     font-size: 30px;
+}
+
+
+.overview{
+     color: #fff;
+     position: absolute;
+     text-align: justify;
+     top: 24.8%;
+     left: 23.5%;
+     font-size: 20px;
+}
+
+
+h4{
+     color: #fff;
+     position: absolute;
+     top: 37%;
+     left: 25.1%;
+     font-size: 25px;
+}
+
+
+.record{
+     color: #fff;
+     position: absolute;
+     left: 27.5%;
+     top: 40.6%;
+     font-size: 18px;
+}
+
+
+h6{
+     color: #fff;
+     position: absolute;
+     left: 25.1%;
+     top: 51.5%;
+     font-size: 25px;
+}
+
+
+.reading{
+     color: #fff;
+     position: absolute;
+     left: 27.5%;
+     top: 55.3%;
+     font-size: 18px;
+}
+
+
+h1{
+     color: #fff;
+     position: absolute;
+     left: 25.1%;
+     top: 66%;
+     font-size: 25px;
+}
+
+
+.updating{
+     color: #fff;
+     position: absolute;
+     left: 27.5%;
+     top: 70%;
+     font-size: 18px;
+}
+
+
+h2{
+     color: #fff;
+     position: absolute;
+     left: 25.1%;
+     font-size: 25px;
+     top: 86%;
+}
+
+
+.deleting{
+     color: #fff;
+     position: absolute;
+     left: 27.5%;
+     top: 89.8%;
+     font-size: 18px;
+}
+
+
+.h2{
+     color: #fff;
+     position: absolute;
+     left: 22%;
+     font-size: 28px;
+     font-weight: bold;
+     top: 101.5%;
+}
+
+
+.additional{
+     color: #fff;
+     position: absolute;
+     left: 23%;
+     top: 105.6%;
+     font-size: 18.8px;
+}
+
+
+.additional a{
+     color: #fff;
+     font-style: italic;
+     transition: 0.3s;
+}
+
+
+.additional a:hover{
+     color: rgb(0, 255, 255);
+     text-shadow: 0 0 5px rgb(0, 255, 255);
+}
+
+
+
+
+.txtbg{
+     position: absolute;
+     height: 109vh;
+     width: 65vw;
+     background: transparent;
+     border: 2px solid rgba(255, 255, 255, .2);
+     box-shadow: 0 0 5px rgb(0, 255, 255),
+               0 0 10px rgb(255, 255, 255);
+     backdrop-filter: blur(15px);
+     color: #fff;
+     border-radius: 12px;
+     left: 17.5%;
+     top: 9.3%;
+     z-index: -1;
+}
+
+
+.copyright h6{
+     top: 116.4%;
+     font-size: 10px;
+     position: absolute;
+     bottom: 0;
+     left: 46.5%;
+     color: #474747;
+     font-style: italic;
+     cursor: default;
+}
+
+::-webkit-scrollbar{
+     width: 10px;
+}
+
+::-webkit-scrollbar-track{
+     background: rgb(41, 41, 41);
+}
+
+::-webkit-scrollbar-thumb{
+     background: linear-gradient(#05c3dd, #00b4b4);
+     border-radius: 10px;
+}

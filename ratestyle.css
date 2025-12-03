@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html,
+body {
+     height: 100%;
+     display: grid;
+     place-items: center;
+     text-align: center;
+     background: rgb(35, 36, 45);
+}
+
+/*Navigation*/
+nav{
+     display: flex;
+     text-wrap: nowrap;
+}
+
+.navbar a {
+     text-decoration: none;
+     font-size: 15px;
+     color: rgb(50, 57, 70, 0.6);
+     border-radius: 20px;
+     padding: 8px 25px;
+     margin-left: 410%;
+     background: #0ef;
+     box-shadow: 0 0 8px #0ef;
+     margin-bottom: 325%;
+     transition: 0.3s ease;
+     font-weight: 600;
+     letter-spacing: 0.3px;
+}
+
+.navbar a:hover {
+     transform: translate(-15px);
+     color: #0ef;
+     background: transparent;
+     box-shadow: 0 0 8px #0ef;
+     filter: drop-shadow(0 0 1rem #0ef);
+}
+
+.container {
+     margin-top: -220%;
+     position: relative;
+     width: 400px;
+     background: #111;
+     border: 1px solid #444;
+     border-radius: 5px;
+     padding: 20px 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.container .post {
+     display: none;
+}
+
+.container .post .text {
+     color: #fd4;
+     font-size: 25px;
+     font-weight: 500;
+}
+
+.container .wrapper input {
+     display: none;
+}
+
+.container .wrapper label {
+     font-size: 40px;
+     color: #444;
+     padding: 10px;
+     float: right;
+     cursor: pointer;
+     transition: all 0.2s ease;
+}
+
+.container .wrapper input:checked ~ label {
+     color: #fd4;
+}
+
+.container .wrapper input#rate5:checked ~ label {
+     color: #fe7;
+     text-shadow: 0 0 20px #952;
+}
+
+.container .wrapper form {
+     display: none;
+}
+
+.container .wrapper input:checked ~ form {
+     display: block;
+}
+
+.container .wrapper form {
+     color: #fe7;
+     width: 100%;
+     text-align: center;
+     font-size: 25px;
+     font-weight: 500;
+     margin: 5px 0 20px 0;
+     transition: all 0.2s ease;
+}
+
+.container .wrapper input#rate5:checked ~ form::before {
+     content: "I loved it 😍";
+}
+
+.container .wrapper input#rate4:checked ~ form::before {
+     content: "I liked it 😎";
+}
+
+.container .wrapper input#rate3:checked ~ form::before {
+     content: "It was Ok 😄";
+}
+
+.container .wrapper input#rate2:checked ~ form::before {
+     content: "I didn't like it 😒";
+}
+
+.container .wrapper input#rate1:checked ~ form::before {
+     content: "I hated it 😠";
+}
+
+.container .wrapper form .textarea {
+     height: 100px;
+     width: 100%;
+     overflow: hidden;
+}
+
+.container .wrapper form .textarea textarea {
+     height: 100%;
+     width: 100%;
+     color: #eee;
+     border: 1px solid #333;
+     background: #222;
+     padding: 10px;
+     font-size: 17px;
+     resize: none;
+     border-radius: 5px;
+     outline: none;
+}
+
+.container .wrapper form .textarea textarea:focus {
+     border-color: #444;
+}
+
+.container .wrapper form .btn {
+     height: 45px;
+     width: 100%;
+     margin: 15px 0;
+}
+
+.container .wrapper form .btn button {
+     height: 100%;
+     width: 100%;
+     font-size: 17px;
+     font-weight: 500;
+     text-transform: uppercase;
+     border-radius: 5px;
+     border: 1px solid #444;
+     background: #222;
+     color: #999;
+     cursor: pointer;
+     transition: all 0.2s ease;
+}
+
+.container .wrapper form .btn button:hover {
+     color: rgb(0, 0, 0);
+     background: rgb(0, 255, 255);
+}
